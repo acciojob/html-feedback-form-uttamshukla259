@@ -9,13 +9,17 @@
 </head>
 <body>
 	<h1>Feedback Form</h1>
+	
 	<form id="feedbackForm" action="" method="post">
+		<div>
 		<label for="Mame">name</label>
 		<input type="text" id="Name" name="Name" minlength="3" maxlength="50" required>
-		<br>
+		</div>
+		<div>
 		<label for="Portfolio">portfolio</label>
 		<input type="url" id="Portfolio" name="abc" required>
-		<br>
+		</div>
+		<div>
 		<label for="favcolor">favColor</label>
 		<select id="color" name="favcolor">
 			<option value="red">Red</option>
@@ -24,10 +28,11 @@
 			<option value="yellow">Yellow</option>
 			<option value="pink">Pink</option>
 		</select>
-		<br>
+		</div>
+		<div>
 		<label for="Likeness">likeness</label>
 		<input type="range" id="Likeness" name="ab" min="1" max="100">
-		<br>
+		</div>
 		<input type="submit" value="Submit">
 	</form>
 	
