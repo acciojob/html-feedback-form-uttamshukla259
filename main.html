@@ -1,45 +1,33 @@
 <!DOCTYPE html>
 
+
 <html>
+  <head>
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" minlength="3" maxlength="50" required><br><br>
 
-<head>
+      <label for="portfolio">Portfolio:</label>
+      <input type="url" id="portfolio" name="portfolio" required><br><br>
 
-<title>Feedback Form</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-	<h1>Feedback Form</h1>
-	
-	<form id="feedbackForm" action="" method="post">
-		<div>
-		<label for="Mame">name</label>
-		<input type="text" id="Name" name="Name" minlength="3" maxlength="50" required>
-		</div>
-		<div>
-		<label for="Portfolio">portfolio</label>
-		<input type="url" id="Portfolio" name="abc" required>
-		</div>
-		<div>
-		<label for="favcolor">favColor</label>
-		<select id="color" name="favcolor">
-			<option value="red">Red</option>
-			<option value="green">Green</option>
-			<option value="blue">Blue</option>
-			<option value="yellow">Yellow</option>
-			<option value="pink">Pink</option>
-		</select>
-		</div>
-		<div>
-		<label for="Likeness">likeness</label>
-		<input type="range" id="Likeness" name="ab" min="1" max="100">
-		</div>
-		<input type="submit" value="Submit">
-	</form>
-	
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+      <label for="favColor">Favorite Color:</label>
+      <select id="favColor" name="favColor">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+      </select><br><br>
 
-</body>
+      <label for="likeness">How much do you like this color?</label>
+      <input type="range" id="likeness" name="likeness" min="1" max="100" required><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
 
 </html>
